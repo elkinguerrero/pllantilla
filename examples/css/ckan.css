@@ -1,0 +1,96 @@
+.opciones{
+    cursor: pointer;
+    width: 100% !important;
+    font-size: 18px;
+}
+.opciones:hover{
+    color: #1DC7EA;
+}
+iframe {
+    width: 100%;
+}
+.frame_tablas{
+    padding: 0 !important;
+}
+.texto_secundatio{
+    color: grey;
+}
+.btn-info:hover{
+    background-color: #42d0ed;
+    color: white;
+    cursor: pointer;
+}
+
+
+.json1{isolation:isolate;}
+.json2{opacity:0.55;}
+.json2,.json4,.json6{mix-blend-mode:soft-light;}
+.json3{fill:#6d55ae;}
+.json5,.json7{fill:#fff;}
+.json6{opacity:0.85;}
+.json7{font-size:22.16px;font-family:Cabin-Bold, Cabin Bold;font-weight:700;}
+.json8{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}
+
+.tsv-1{isolation:isolate;}
+.tsv-2{opacity:0.55;}
+.tsv-2,.tsv-4,.tsv-6{mix-blend-mode:soft-light;}
+.tsv-3{fill:#00b1ae;}
+.tsv-5,.tsv-7{fill:#fff;}
+.tsv-6{opacity:0.85;}
+.tsv-7{font-size:22.16px;font-family:Cabin-Bold, Cabin Bold;font-weight:700;}
+.tsv-8{letter-spacing:-0.01em;}
+.tsv-9{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}
+
+.xml-1{isolation:isolate;}
+.xml-2{opacity:0.55;}
+.xml-2,.xml-4,.xml-6{mix-blend-mode:soft-light;}
+.xml-3{fill:#ff9779;}
+.xml-5,.xml-7{fill:#fff;}
+.xml-6{opacity:0.85;}
+.xml-7{font-size:18.39px;font-family:Cabin-Bold, Cabin Bold;font-weight:700;}
+.xml-8{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}
+
+.csv-1{isolation:isolate;}
+.csv-2{opacity:0.55;}
+.csv-2,.csv-4,.csv-6{mix-blend-mode:soft-light;}
+.csv-3{fill:#34b25b;}
+.csv-5,.csv-7{fill:#fff;}
+.csv-6{opacity:0.85;}
+.csv-7{font-size:22.16px;font-family:Cabin-Bold, Cabin Bold;font-weight:700;}
+.csv-8{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}
+
+.svg_formats{
+    width: 80px;
+}
+
+.url_api1{fill:#fff;}
+.url_api2,
+.url_api4{fill:none;stroke-miterlimit:10;}
+.url_api2{stroke:#b2b2b2;}
+.url_api3{fill:#16747a;cursor: pointer;}
+.url_api4{stroke:#16747a;}
+.url_api5{font-size:26px;fill:#3c3c3b;font-family:Comfortaa-Bold, Comfortaa Bold;font-weight:700;}
+
+.cont-head{
+    width: 100%;
+    display: none;
+}
+
+.btn-primary{
+    cursor: pointer;
+}
+
+.buscar{
+    border: none;
+}
+.botones_menu{
+    color: #a9a9a9;
+}
+.menu_botones_linea{
+    border-right: solid 1px #a9a9a94d;
+    padding: 0;
+}.cuadro_3, .cuadro_4, .opcion_4{
+    display: none;
+}.numbers{
+    padding: 0 5%;
+}

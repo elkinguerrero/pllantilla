@@ -1,0 +1,537 @@
+<!--
+=========================================================
+ Light Bootstrap Dashboard - v2.0.1
+=========================================================
+
+ Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard
+ Copyright 2019 Creative Tim (https://www.creative-tim.com)
+ Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard/blob/master/LICENSE)
+
+ Coded by Creative Tim
+
+=========================================================
+
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link href="css/ckan.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="http://www.creative-tim.com" class="simple-text">
+                        Creative Tim
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./user.html">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>User Profile</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./table.html">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>Table List</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./typography.html">
+                            <i class="nc-icon nc-paper-2"></i>
+                            <p>Typography</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./icons.html">
+                            <i class="nc-icon nc-atom"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./maps.html">
+                            <i class="nc-icon nc-pin-3"></i>
+                            <p>Maps</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./notifications.html">
+                            <i class="nc-icon nc-bell-55"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active active-pro">
+                        <a class="nav-link active" href="upgrade.html">
+                            <i class="nc-icon nc-alien-33"></i>
+                            <p>Upgrade to PRO</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#pablo"> Table List </a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                    <i class="nc-icon nc-palette"></i>
+                                    <span class="d-lg-none">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="nc-icon nc-planet"></i>
+                                    <span class="notification">5</span>
+                                    <span class="d-lg-none">Notification</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Notification 1</a>
+                                    <a class="dropdown-item" href="#">Notification 2</a>
+                                    <a class="dropdown-item" href="#">Notification 3</a>
+                                    <a class="dropdown-item" href="#">Notification 4</a>
+                                    <a class="dropdown-item" href="#">Another notification</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <!--
+                                <a href="#" class="nav-link">
+                                    <i class="nc-icon nc-zoom-split" id="Capa_1"></i>
+                                    <input type="text" value="" class="form-control buscar" placeholder="Buscar...">
+                                </a>
+                                -->
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <span class="no-icon">Account</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="no-icon">Dropdown</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <span class="no-icon">Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="content">
+                <a href="#" class="nav-link">
+                    <div class="row">
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="margin-bottom: 2%;">
+                            <input type="text" value="" class="form-control buscar" placeholder="Buscar...">
+                        </div>
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <i class="nc-icon nc-zoom-split" id="Capa_1" style="margin-top: 10px"></i>
+                        </div>
+                    </div>
+                    </a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card cont-head" >
+                            <div class="card-header">
+                                <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="title"></font></font></h4>
+                                <p class="card-category"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="frame_descripcion_text" ></font></font></p>
+                            </div>
+                            <div class="card-body content-full-width">
+                                <ul role="tablist" class="nav nav-tabs">
+                                    <li role="presentation" class="cuadro_1 tap_opt nav-item ">
+                                        <a class="nav-link" id="info-tab" href="#icon-info" data-toggle="tab"><i class="fa fa-info-circle"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Información</font></font></a>
+                                    </li>
+                                    <li class="cuadro_2 tap_opt nav-item">
+                                        <a class="nav-link" id="account-tab" href="#icon-account" data-toggle="tab"><i class="fa fa-database"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Tablas</font></font></a>
+                                    </li>
+                                    <li class="cuadro_3 tap_opt nav-item">
+                                        <a class="nav-link" id="style-tab" href="#icon-style" data-toggle="tab"><i class="fa fa-database"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Mapas</font></font></a>
+                                    </li>
+                                    <li class="cuadro_4 tap_opt nav-item">
+                                        <a class="nav-link" id="settings-tab" href="#icon-settings" data-toggle="tab"><i class="fa fa-pie-chart"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Visualización</font></font></a>
+                                    </li>
+                                    <li class="cuadro_5 tap_opt nav-item">
+                                        <a class="nav-link" id="settings-tab" href="#icon-settings" data-toggle="tab"><i class="fa fa-database"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Analizis</font></font></a>
+                                    </li>
+                                    <li class="cuadro_6 tap_opt nav-item">
+                                        <a class="nav-link" id="settings-tab" href="#icon-settings" data-toggle="tab"><i class="fa fa-download"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Exportar</font></font></a>
+                                    </li>
+                                    <li class="cuadro_7 tap_opt nav-item">
+                                        <a class="nav-link" id="settings-tab" href="#icon-settings" data-toggle="tab"><i class="fa fa-code"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> API</font></font></a>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="frame_descripcion" style="opacity: 0; display: none;">
+                                        <div class="card-header ">
+                                            <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción</font></font></h4>
+                                            <p class="card-category"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="frame_descripcion_text"></font></font></p>
+
+                                            <br>
+
+                                            <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h4>
+                                            <p class="card-category"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="frame_etiqueta_text">asdas</font></font></p>
+                                        </div>
+                                        <hr>
+                                        <div class="row" style="text-align: center;">
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                Ultima actualización
+                                                <br>
+                                                <i class="texto_secundatio frame_subtitulo_text_1"></i>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                Terminos de uso
+                                                <br>
+                                                <i class="texto_secundatio frame_subtitulo_text_2"></i>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                Organización
+                                                <br>
+                                                <i class="texto_secundatio frame_subtitulo_text_3"></i>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                Categorias
+                                                <br>
+                                                <i class="texto_secundatio frame_subtitulo_text_4"></i>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="card-header">
+                                            <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Información adicional</font></font></h4>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Identificador</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_1"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fecha de creación</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_2"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fecha de modificación</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_3"></div>
+                                            </div>
+                                            <div class="row frame_contenedor_6">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fuente 1</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_6"></div>
+                                            </div>
+                                            <div class="row frame_contenedor_7">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fuente 2</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_7"></div>
+                                            </div>
+                                            <div class="row frame_contenedor_8">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fuente 3</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_8"></div>
+                                            </div>
+                                            <div class="row frame_contenedor_9">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fuente 4</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_9"></div>
+                                            </div>
+                                            <div class="row frame_contenedor_10">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Fuente 5</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 texto_secundatio informacion_texto_10"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Acceso a los datos</div>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                                    <i class="btn btn-info btn-wd linkc_csv">csv</i>
+                                                    <i class="btn btn-info btn-wd linkc_tsv">tsv</i>
+                                                    <i class="btn btn-info btn-wd linkc_json">json</i>
+                                                    <i class="btn btn-info btn-wd linkc_xml">xml</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <br>
+                                    </div>
+                                    <div class="frame_tablas"></div>
+                                    <div class="frame_formats row" style="opacity: 0; display: none; text-align: center;padding-top: 30px;">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 119 147" class="svg_formats linkc_json">
+                                                <g class="json1">
+                                                    <image class="json2" width="119" height="147" xlink:href="data:image/png;base64,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"></image>
+                                                    <path class="json3" d="M3.94,55v72.72a9.53,9.53,0,0,0,9.5,9.5H99.59a9.53,9.53,0,0,0,9.5-9.5V55Z"></path>
+                                                    <path class="json3" d="M109.09,57V38.88L74,3.39H13.44a9.53,9.53,0,0,0-9.5,9.5V57Z"></path>
+                                                    <path class="json4" d="M73,3.39l-3.6,32.77a9.53,9.53,0,0,0,9.5,9.5l29.21-6.78Z"></path>
+                                                    <path class="json5" d="M73.08,3.39v26a9.53,9.53,0,0,0,9.5,9.5h25.51Z"></path>
+                                                    <image class="json6" width="56" height="31" transform="translate(13 19)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAfCAYAAACyLw6QAAAACXBIWXMAAAsSAAALEgHS3X78AAAFCElEQVRYR+2Y2U9bRxTGf4MXlpjdgQBNECFVl3SRKvWl/7/Uh6pSlKpRU9GGJgRwSAwxxiw2d/rwnfGMr20M7RMRR7J85/rMnO8728zYee/5lGVslMJtlzuCt12KoxSccy4d+6Rok99SHZ/XSyU357q6DNMbpeOuajLOuTHkhLK9ugA6CFj6W5EIuAOcAx3vfZas5XJzxoAsWTPLOS/VdabXzq05EF+PzjCCBqgELAAP7HUNOLTnSWAamAemgAIieALsmV7be+8NSMn0poE5YBw54gg4BlqmnyW2F4EVW/sAeA+ceu8vh+DbB+rBLoxO0QngEfCjjX9N3i8joNM2LiMgDRSRE6BjQCaBKgIyb3NKQBuRO0Tg3jvnThMbD4GfgBngJfAMeOucayU6Kb5fMEfZ+EqCzn5fAJ7YeAelwSNgHS22j7w7BlRQFC+TNSaBVeBLYA04A94Bp/bbCrABvAX+AHZNJ0Twa7O1jFL6HGVIh158AH/RWy4jIxhS6x6aVAE+A75DCz8DthFgjwAXgY/IESXgPvANAtpBTtpCkZs2G09Nb9LGuygbymZzwex+hRzasPkpPuy5Z2cYRRBELG0Q95DBKUSigQh1TGcMRdAjAuuI4BzwHHk5ROkYEakCP6BUBKXYmT13zEYDkV1L5rvkQ/LdlZvsgyH1WkATLbaA0qiCyF8Su2JInw2UXk3gNYp2y3RaNn5tz+soO1ZRE3Kmd4TS8sJ+W0WOHon/OhFM5RwBeoWaxSby9hzwBnWwJgI1johtoNTZQXXWxLYE51xm4x3gH0SwCsyaHVDdtYgEZ1EPOLS5V5K8CcGwx31ANVRFhr5H9fHKPtumU0Ypt4giUUdp1m3hRrJt7w9Q4ykQG0Ww20aEPqLIbSKy28h53aaSl5sQBHnzBNVRhrz8GJFYQoafA78hr5eJm3DbPnkgwXEhtQdJGsUZ5NSnNrdCrPs+uSnB4M2wMe+j1HqCDH5O7IxbyLujJGxHQfeCfkekUdxBjlxC6Z/Z3O7pJZWbEoR4vLpAJA9Rep2hTfkhivIJSrc2kUBo4xn0nJZmUEPyKL2P6ScZsmcHlUIVETxHadvd3FO5DsG0FlIJm25IrwICGTrrFAL0Du1x8/a+aSeRjHg4WEN13Ebga7Z2KiGKddNZR+VRRU0udPYe6SGYO+kXkHeLxMUvbTyVvMvs/QmKZtgCztB+NY42+WXgC+SMXURgAqXaI0S0hsDXEflBTm2isvgdEfsWOe6AAdIlmKRLmZhOi6imWih1mojcouk1EJEpBHIWEa2hg/GejTNUnyGlHPEks4nOqHXgBQLfJB77Asnw3EZkXqDoPUYZ0hc96I1gERlcQjUxYd8lYvuvoYhsokUbiEAFbb4VBPAlqpVDRCRDUV2zeZ54Fq2i9h/OogfEzGjb+iTvMptbA/5EDW6ceDzsaTZF6EavgIp1BZEsIm+/QSeJffuuIA8/ML2Qth1kcBeRO7D5Fwj8OQIVbhOzCHS4Wu1j1yEkod62bFwn3kU9ctzfwM/EK9eHRAdI7oPOudDNQgQdMhai0EJkysjrSygCYZM9MwNHyOvdy+n/uA8OvevZmpMoI+4jbHuGoXuYSAmmNRhOEukGnCULlxDAApHgJbGr9tzOk/X/642eoDfgRh8w+4E6KY5cF8Um9f/P0a83VDcvublXzkl0GaY3SufK/2Q+BRl53bjtckfwtssdwdsu/wLr+SW+zJVpcwAAAABJRU5ErkJggg=="></image>
+                                                    <text class="json7" transform="translate(15.7 39.02)">JSON</text>
+                                                    <image class="json6" width="62" height="49" transform="translate(26 74)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAxCAYAAACClxqRAAAACXBIWXMAAAsSAAALEgHS3X78AAAGrElEQVRoQ+2a+28UVRTHP6fddqHSVnlsbQtFBQRBQpFGExOj/uUajRqNhfjiUcHy6IMuVqDl0X11/OF7786d2ZndNXSXVfwmZMru2Znzvedxzzl3LIoiXkUUOgkAmJn5P4OPI4DoJa3ci+pknWTMbAgYAYruasAuUAd2gHoURbv5d9h7OJ0KwD53HUKka0AFqHXSqS1xMxsG9gNHgFlgEhhGD9gE7rlrrZtV3gs4S48Ah4Bj7joCNIDHwCrwAHgeRVEj7z65rh6QPgpcBC4BM+43W8CvwFfANlqIfmIUmAY+Bt4HJpAHrgGLwBVgxcxyyWcSd67kSX8IfEb8gCp6wB1k/TDG+gVDzx5HOs6gxTgJHEQeACL/LMvtW4gHrlQCPgA+B+bRQjwA7gPLwFX3/2r6Hn1AFT37KiK/DbyJQvIiWpi6k1s1s2o6FLMsPgQcAN4GPkKk3wD+AL5GD1tD8f2APsY3KGObWQ09exEoI4ufBT5Bes+jcNxAcf8I5YAmEsSdtQvIXd4FzgCH0YreAH5Asf0IZfSO2bMXiKJo18yeA+vAQ+AuInoQGel14DTicBd4Yma7oYGyLF5EbnMGxY8BK8AvwE20whW0+H2zdBqOfBUl1iqK+UOI9CWU/E4jQ22QCsk0cR/fEyjGx9BK3gR+B/4Eqi/DyllwCx+ZWQUZ5Gek9zFkvBLi4uuPpqGGWu4Wkx9FcVEGriOXeYqKl4GCM8QOivs1ZCwQB086gSziIRroJmV3rb9M9+4AX01W3DWizVbbjnhE4Br/AvjEPOquCddOI4u4r3l9MjhAHCuFoDkYGAS1xwQwhXQGcaiRsQBp4p70FoqXCsqUJxD5UQYXo0jHE0jnCuKwRQb5LItXUUzfQg1IEVVEYXYcNIQWP4J03kQcymRUlwniLnF5i28AT9xXudlxgBDuRiDdN3AWTyflvBj3dW7H7DiA8EktzSGBLOK+yS/SRXYcQHhDhRxaeCY+CHrwEir8J9xXudlxgJDejSYQhxKw33FrolmypnpwP3gooezoC5hBJR/mJt9LlBCHv9Bi3At78wIk9kHfz34KXABeQ+XqDdSHVxhcVJCON4D3UJN1AZGuopJ2zffmoasXkWtcRP3sFFrFVTRtecSAlqxOpzrS8Q7SuYY4zCNOM4gjEMe4H+WMobZuzH22g9xnh1QjP6BokNTZSHJqjso88Yi4IbkH3HZ/70PT1TnU4A9yyVpAOs4hnfchDrcRpy3EMYJkP77jBL5Bnc4IKv9OAudRT545YwsWw18jaLpgX2SRG08jXU8i/W+hcdl3iNuOFy4Afo5VR2XeNVT9zKJmftLdcJKMht6SBw5+IetAxcwSo6leyRJXbaGuT1GiW0ScNglyVNPiwSjnIZqiXkPZ8SjJU5Qmgi0wPHCAYLBvmm3v9kqWGJ58EXlsGXFYRpwSk9bE6MlZvooe4OvcOhkItsASsIDm77Pu61U0mPwRt4X0SjbH7eskp6xdjZc71rkBikgpf+gw4z5fc9d1nIv1SDZvpt+RQxbxbicZYVz504wjTjYidlF/j17JpnWLyOaQQLpW9w/tdpKR9QD/L41eyXpEtE6OpnBzhPQ2nGXxfzLJ2HWfPUP9b9HJr6N4fEzsar2ShZh03uRonVS5nSYeWtxPMtbInmT4ONoEltAZ1mGk1BJKQqu4w4ceyYaoEk+OzhOHSOZcPS/GR0hOMvLGy77o+dJdD6Fu6A7aRsrEXrLnsl6XoA7x3VnHyVEWcY+2MZUqeryiY8BzZJ2nBGdrvZJtg7b6tyMOKur9cdIE8NDMGsFK+6KnjlZ5GNXDDSBxSNcrWWgm5QJJXRODhzTy9nGfHYfRjc4Ql301gk7NKdEAGmZmOQVFT2WJj7bnkK4lpHvebtR2rl5GWXUCOIXK12lgzMyG09sDNJXtCnsha4Jvp6eRjqeQzs9oMznKsrifZFxHqzcJHEcvCWw7mXVg21qbhb7B4iZmHJFeQDoedyIriEPm5CirVq+jDLrkfjiFXGfeiY0Dv6E3JMrW2iz0HBY3MSXgHeAc8dsbB4hPeJcQl5bJUZbFd1FCWQa+R26zgLaUBbSnvgV8i5qFdctvFvYcLsRG0B59Cb35dA7pNI7y0BWk+zLi0vnlH2f1Glq1y4HMBTTCmUPbhJ9vtWsWeoVRRPwsehvrGFqM+8BPwBdI98R+HyJzO4vid0xW3Ed+X511v3lMapTTZ/iMv4VeWPAl7CoifBnpnhuGr+ybjf+/y9pWyFqGfuBcvF+WTuNFdeqK+H8RfwP0w8GdrsyxyQAAAABJRU5ErkJggg=="></image>
+                                                    <path class="json8" d="M38.5,77c-4,0-7,5-5.5,10.26s-.5,8.8-3,9.11"></path>
+                                                    <path class="json8" d="M38.5,115.75c-4,0-7-5-5.5-10.26s-.5-8.8-3-9.12"></path>
+                                                    <path class="json8" d="M73.5,77c4,0,7,5,5.5,10.26s.5,8.8,3,9.11"></path>
+                                                    <path class="json8" d="M73.5,115.75c4,0,7-5,5.5-10.26s.5-8.8,3-9.12"></path>
+                                                    <circle class="json5" cx="44.75" cy="104.31" r="2.75"></circle>
+                                                    <circle class="json5" cx="55.75" cy="104.31" r="2.75"></circle>
+                                                    <circle class="json5" cx="66.75" cy="104.31" r="2.75"></circle>
+                                                    <rect class="json5" x="3.94" y="56" width="105.16" height="3"></rect>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 119 147" class="svg_formats linkc_tsv">
+                                                <g class="tsv-1">
+                                                    <g id="Objects"><image class="tsv-2" width="118" height="146" xlink:href="data:image/png;base64,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"></image><path class="tsv-3" d="M3.73,54v73.5a9.54,9.54,0,0,0,9.51,9.5H99.38a9.54,9.54,0,0,0,9.51-9.5V54Z"></path>
+                                                        <path class="tsv-3" d="M108.89,57V38.66L73.78,3.17H13.24a9.54,9.54,0,0,0-9.51,9.5V57Z"></path>
+                                                        <path class="tsv-4" d="M73.78,3.17l-3.6,32.77a9.53,9.53,0,0,0,9.5,9.5l29.21-6.78Z"></path>
+                                                        <path class="tsv-5" d="M73.87,3.17v26a9.53,9.53,0,0,0,9.5,9.5h25.52Z"></path>
+                                                        <image class="tsv-6" width="41" height="31" transform="translate(17 19)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAfCAYAAAB6Q+RGAAAACXBIWXMAAAsSAAALEgHS3X78AAAD1UlEQVRYR+2XW1MTQRCFv0mWgBAQQQMoWt4oH6zCd///D1BfLG8FeEFuhgQJl+xmx4fTww4kixApiwe6ais7Oz3TZ05fpuO891x3qfxN4TrIDcirkiS8OOdceC3RjcUDeAvokrUDg92XJEG0R5+e894HhRGgZr+OfrA++k2BLpCZXmJrExt7m0vtfcTWdoHMe58TiXOuYjqxXhqABiYTYBJoAFMUYGvxIiBHxveAHeDQ9CaBO8A4UEXAOqaTA9MotHaAXedcN/JCBbgFzAIzZmsLaJtNEmOxCkwAC8AcULdF80g2gKZtcGTGQABmgNsI6Bg6WBX4DXwyQ09s/iOFB3qRB+8By8BDs9UF9p1zmffeJ95775zroZP/BA4QK3XELMAa8N0MpwjoOPDYNu7Y5tuIsTpFWGTIU4v2/gvoOOdyFBpjwAPgFbK7a3r5WXdnCMAxsInYuWNGsG8fgRZibwxYAl6a7htgFbnJI/clwD5iNjW9EeAbOkxKAfIu8iC25hDo2Vggjc2UgqUEsRNAdlActmzskPEQh12bb6MDV+zxyM1d02+gMBqzPRMUKnM2v4nC6oioOpzUSW+CmMpNKX7C9x4Cf4DYd4ilWeTmxHRCsqWm10ZA5hCwEWAUAV9E8g1545gI5EmdvKQco81WELhnCMw0MtREbssi3e8oERcRsC2KqnIbHWoTy+q4Tl4apIVGSIDPyOAjFPiLCPgKitFtZLyNAHQpKkGoqzV0mKbtecrVMARIkxzF1BcbbwFPEasNxOw74C3wA4H7hUBPITePowSbRomyig5yytUwJMgo0cLJN1CZeo4yfgmxBTLaRAdZtblplNFTiP1Q6Pc442oYEiSA9z53zoXCfIDq2zYC/RrVz2UUiy2KW+qFzbVRltdR/LYY4Gr4B5BRQ5AjtjLk1irK9pDxU/btGAHZR3E5j0DmlGR1kKFateg6m7CnhkpRuLl2EbuhIHvE0hbwFVWCBXRjJShsBroazmcy1EfoP12CGGqgJNijuCofIaY6RCUFMd1GQJdQvZxAyVfqaigHmaONOzYOHVBgsYpAPkNA90y3Dty33zXgA7CO3NhDQNoom0dtvIYOcymQoRdsojqIvWfYxWQNyRECVkVAe2i/DN3z6yhpwj3tEdgN4H00/hT2H+RqsKb31Ici3mbob9VSA1mhaAwaqN6FZvcIxVgLu/+9NblR7xjW9VDn1QS6FwYJJ5uF2wAGdNRRNz2K2AwgexTZnp81HK2rmf7Abv3UmhLw5/7nGKDT99+mjBW42N6xlIK8TjJUnfzfcgPyquQG5FXJHwcZwjQbWAUHAAAAAElFTkSuQmCC"></image>
+                                                        <text class="tsv-7" transform="translate(19.13 38.8)">
+                                                            <tspan class="tsv-8">T</tspan>
+                                                            <tspan x="10.88" y="0">SV</tspan>
+                                                        </text>
+                                                        <image class="tsv-6" width="78" height="45" transform="translate(18 75)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAtCAYAAAAAyl3pAAAACXBIWXMAAAsSAAALEgHS3X78AAABJ0lEQVRoQ+3XsUoDQRSG0TMxioVE0FpLwbfwzX0Me1MrKAoi0bFYIwmCJHdK/9NssWxzmZmdr/XeQWutmayf8VuH3ntvvXettRnmOP5+zv76+p/6xApvWDXTCjvEOS5xhiNZeZs63vGIezzMv18c4wI3uMaJDG5TxwvucIvXuWlAB1iYhneFU9mumz7xZBreAgdz0zQ/8IylabVlxW1br7ilaU4fOeN28+uMy191d9t/1dzj9rJ9j4v9ZUsWZXBF6wtwzrjdpFUL0qoFadWitGpRWrUorVqUVh2QVh2QVh2VLVmUwRWlVfeTVi1IqxakVYvSqkVp1aK0alFadUBadUBadVS2ZFEGV5RW3U9atSCtWpBWLUqrFqVVi9KqRWnVAWnVAT/3uC+rQeURQ6OnmgAAAABJRU5ErkJggg=="></image>
+                                                        <line class="tsv-9" x1="20" y1="77.5" x2="92" y2="77.5"></line>
+                                                        <line class="tsv-9" x1="20" y1="89.5" x2="92" y2="89.5"></line>
+                                                        <line class="tsv-9" x1="20" y1="101.5" x2="92" y2="101.5"></line>
+                                                        <line class="tsv-9" x1="20" y1="113.5" x2="92" y2="113.5"></line>
+                                                        <rect class="tsv-5" x="3.73" y="54" width="105.16" height="3"></rect>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 119 147" class="svg_formats linkc_csv">
+                                                <g class="csv-1">
+                                                    <image class="csv-2" width="118" height="147" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAACTCAYAAABbLu0gAAAACXBIWXMAAAsSAAALEgHS3X78AAAF70lEQVR4Xu3c+0/bZhSH8cchlHBrC4VJ7S7aJu3//5e2VRtt2Qor10AS94fznviNCYROOHYO30d6lRACvXxybGMRF2VZouLVX/SE+yqKovC7Dz4xXiVA2fGJKB7796tBFkAvu+8rcmW2JmmVXQVeCJtAHbIHrGWrn25z5Ig56DitG2CUVieB790U10D7wDrwIrvdSGs9fd5xI+aot8AQuAAugWsMeVwURac2z3NhM9Q1DHEAbGdrE9hK9x13jZhT69M6wlDPgJO0TjHkIR3DvQNbQ93A8F4D+2m9Bl4Bu+l2C8P3qY3YBJvWCwz0CPgLe0H7luqaDuHOm9gcdRd4A7wFvgfeAYdUsNvYNOcTGzGHvQQ+Yy/uTe7ugjqDOwObprWHTeA2hvoD8Avwc7p/ALzEJnWQnpsfQEXMN8XX2FZrB3vhz3sxdwK3PrFFemyAvSrfYqi/pdt3wB7V5tcn9TkcFU+wA6UtDDWf1s7hTmHTtK5hWDvYZPq0/gr8lB7bYXafWhAb1Ztg/zf5i/mhWsXNJ9ZhB9j+8xCD/RGb1ANs3zpg9gg4Oqjnu6lFoHmt4c6D9YOmfeC7tPbSY4P0Nc8J1PN/r7/4H1sruH2YOWjy/esOhrmPTWn9YOG5oXorg1uf2DrsK6qTENGPfB/bSuA6rE+hHzz5maZN7h4BqhXArU+sb479XHD96FdVdRq3Dpsf+fWz+895v/pQncWdd4IixxXq4jqJ+79/g0LN1DlcwT5dncIV7NPWGVzBPn2dwBVsM7WOK9jmahVXsM3WGq5gm68VXMEup6XjCnZ5LRVXsMttabiCXX5LwRVsOzWOK9j2ahRXsO3WGK5g268RXMF2oyfHFWx3elJcwXarx+KW2W1Jen9u9rhgO9hjcB10ei0MYFgURelTK9hutgh3gk3oCHvf7ih97MiC7XD34U6oLptwBZxjb8geAiOfWsF2u3m4YwzxHLsGxifs8gkXpAudwLe9JVC1k/9e9xrVlQb8miB7VG+Y62fP1aZ4Rcon16/is0X17vr8IieAJnaVKph9+41fb6uPgU+nFQS7ijngg2/DEWzQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBE2zQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBE2zQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBE2zQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBE2zQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBE2zQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBE2zQBBs0wQZNsEETbNAEGzTBBk2wQRNs0AQbNMEGTbBBq8OWaU2y5Y+pFSqHzVHHwCjdCncFq8NOMNBb4Bq4SffHCLcrPWqr6rD+iTGGeQmcAecYcI6r2isfPh/AMXMGL5/YSXriFfAF+Bf4nO5fpW/krw61/HwXeQsMseG7xAbvjk0PoCxL1x5hiGcY7D8Y7tl930AtJd/k+uCdAadpXVDZTKe2X/viUXrSf8Ax8DfwBtgFNqgmvA8Uaalm813kLbZrPMFsPqR1ik3uLWYIzMJCtY+9wCb2CNgHdoAX6TkjDHkN4Tad71N9Uk+wYfsT+APzOSGDTVvfCrYsy7IoijI94TJ9wRGwDaynP2SIQW+lx3oItsl8Wq+xze8x8B74Pd1+xLau+aYYuDux/o2G2EHTx+w5N+mxQ2yCN6g2yaqZfPd4iW1yP2CT+h6b2mNs83xDNq1Qg01TWx99qLbvx8AB8BIYpK/Xacnmcosc9ggbuGNs0K6Z86NofWJz3Jv0kN8/Bz5hqFvYPlf72ebKf1IZYsc9J2l9oTrHMKI2rQBF7WN7sCgcq4ftS18Am9nyzbD2sc2WHxHXf3a9SZ+7gwr3wE4/acA9bDL7aa2njx1VsM2VnxF04Fuy8wnzUGEBLExxoYLMQYXafGW2pueG7wP1FsLmZcgCXX4lTM8SLuybYNXq9BX0jmR++saVvwAAAABJRU5ErkJggg=="></image>
+                                                    <path class="csv-3" d="M3.73,55v73.28a9.54,9.54,0,0,0,9.51,9.5H99.38a9.54,9.54,0,0,0,9.51-9.5V55Z"></path>
+                                                    <path class="csv-3" d="M108.89,58V39.44L73.78,4H13.24a9.54,9.54,0,0,0-9.51,9.5V58Z"></path>
+                                                    <path class="csv-4" d="M73.78,4l-3.6,32.76a9.53,9.53,0,0,0,9.5,9.51l29.21-6.78Z"></path>
+                                                    <path class="csv-5" d="M73.87,4v26a9.53,9.53,0,0,0,9.5,9.5h25.52Z"></path>
+                                                    <image class="csv-6" width="43" height="31" transform="translate(18 20)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAfCAYAAAB+tjR7AAAACXBIWXMAAAsSAAALEgHS3X78AAAER0lEQVRYR+2X7W8TRxDGf2s7zguOSQy4oQ0paUEtAtHv/P9/QN+kqoWK0AYabHDiODb2+XzbD89sbs85O/kSCaSsdPKdb3bmmWdeds557/lSVuUygc9p3YC9rlW7TADAOefCbfS3B/BR0i+Tm19+QbFEOi7IuUUFFm2qIKfq9usQgBSY2K+/RG5q9yumMwFS731GtJxzFZOJ5aYBcCmz0aZVZPwWsAVsAFVkeAj8B/Rt2zqwCWyXyH0AMtNRsedj51wSgJjNdeAO0EJAO6Z/CiVgo013gTYCuoaArCHwVeAUAcDkdxCYebkB8BIZ3Lf3f2HsAjOL4gpwD3gOPACOTObMOZd6730BrAHdAL4GfgT2gBlwbFcHAWjYlgpy6hHwEBghI11710DsThGwGrBr9x+BoXMuQymzBnwD/ISic2xy2YU0mPPuGfAUMfcKeI2Ajkx83WQzxMJzFL6fgQOT9SZXA84Q01MU4hXgX+TUlBzsXeArs3EGfEJkAcU0CEx8i8BuA78BfwBvbXNqslXb20B53UIRSVB69E22YpdH4U8Q6DZybg3ldA24jYDWgfdADxgTdZMKnLNaQ0b3bdMAsfQOGU+89zO7ElM0MWMDxE4LgWiYvhlW0XYNTFfdbNwmL+Q2ShEQ6x3Tfw42ZnbVFOybgkNyRmclfdEjwB2UJneA7xGoLWSwRx6RickeomLcRQA7CMcmAp8gZvtEbQtysCFfN5FRZ4ZO5zeE5b33zrlQKK+Q4T1UILvIgdcoOl0Eoo+AJAjYJnlfriOneqazkAJQZDakQmjIoYKXjWUZSoO/7bkDfIccbiOmfwV+QVFKEJAu0ETR3ECFuIUK6gA5VEgBKIKNT5s6Ah1OotJl7E7JmTgC3qBW9hR4jNgDGe8hhw7s3RbqAE0UjXBglEY0gA29cIAM76BiaaKTJitLBQDvfeacCw1+hPpjF4F/Qd7aDoETBOQD8IO966Ou0ED5fUJJCkCR2QmiPxTLLmrSH4HUOVcosvmBA6VEmBUS1N5a5B2iaf9NEKAzlLc7CGzGgi4QVg0KxdJDYB+gPvsQseCxY8/2VVHIwukT53mGWtYQsTwib+xxB/kHnZL3EegxImZhUcfMZsjbN8DvKOfuA0+Q5+EE8whcFRVE6M+ryNAYFc0eAjEkakWI+b7pe4za5S1UpAtTACKwUbF0EdgUGWwh9rbJFVXsvouK8RE6pk8RuAaaLxrI+T/R4TJBLI8R4E/IybHJvecqYOG8WEaozUzQCBimriZqRx5F4C1SnCKAO/Z+ZnpTNF29Q8UV5gBvuo/QUR6eX6I0TBcVc+nwvWSeXTeRIcqvPvkx27b3YegOOXhi8lNvw3bJGDpDxPTQsX51sLD0SwGKXwmQO1YlBzuLZC60voiQusmXfj0U9iwCWxDKgYdfD5x/H5W8vyBTtubb3zJZuCLYz2V9UZ/iN2Cva92Ava71P6Sh6IVXW4oJAAAAAElFTkSuQmCC"></image>
+                                                    <text class="csv-7" transform="translate(20.13 39.58)">CSV</text>
+                                                    <image class="csv-6" width="78" height="43" transform="translate(18 79)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAArCAYAAADWk770AAAACXBIWXMAAAsSAAALEgHS3X78AAACyUlEQVRoQ+2bTW/TQBCGn3U+iFAioQaJS8s9CK5cG345cOyVA9wpl0qkQm0RVT68HMYbr7dOsAeqPTCPFCWKnHHft7PreSXbee8JOOdc+IiR4gF8ZZgLxjnnCmAITKr34kCB/5ES2AL3wNZ7Xw5h32lDYA68BE6AMdZ5IJ22Bq6Br8DKObcZRgdMENPeAQtgihhXr+V+OJrGe/S1chH03wFfgPfAT2BvXNxxC+AtYtwaadGSfsTLfgDsqNqc/rVyETSMEeMAPlXfubjjCmCEGDZFnL5CWnRN925xyMlOgDOk1g26WrmINZxSezKi2vtj48IPHCLuCvgIfEYc7yrWISd5BSwR876hq5WLWMM58IJk60mNAxG1BVbIur4AftB9iRXAM+Qkr5Hl/x1drVy0aWj8s9uMAxG2AW4Rodd0FxvGmFukxg59rVykGh78vYeMg/oqWAKl976T2GqGLmleRVW1cnFAQwMbcpUc67iwGRZAUaexP1JUr3gz1dbKRZuGBoeMC6PJDNkkofu+FDbWGVJjgL5WLlIND1Zmm3HpMBwm564jRLiUL4DnwNPqXVMrF7GGOdXQGx9wqOMmyPy1BN7Qb2gNw2PIvbPqfUn/WrmINZzSo+MGiONnyI93LccdY4B02gx4Un2nrZWLWMMvOnScR8TdIBP/in5dknYcyDx0Sf9auWjruE4D8D3/NnJdAh/oXysXbZGrgUWudixyKbHIpcEi1yNiximxrNqOZVUlllWVWFZVYln1L7CsqsCyqhLLqkosqyqxrKrBsuojYpGrHYtcSixyKekducJmOEYGv3P6x6QwPIZ7y2boa+Ui1eBILhSxcWEEuateU2Twm9N/aRVI7QKJKwX6WrkIGhy1J/vRJBiXDr1g9wBDrT/cA7xCfPLOex/uOh9hd5234UnuOgc29pxDN0qS5xz2xgH2ZM1xPLB/suY3yXl2Pb9jmGQAAAAASUVORK5CYII="></image>
+                                                    <rect class="csv-8" x="22.13" y="81.5" width="68.25" height="34"></rect>
+                                                    <rect class="csv-8" x="22.13" y="81.5" width="19.7" height="34"></rect>
+                                                    <line class="csv-8" x1="22" y1="92.5" x2="89" y2="92.5"></line>
+                                                    <line class="csv-8" x1="22" y1="104.5" x2="89" y2="104.5"></line>
+                                                    <rect class="csv-5" x="3.73" y="55" width="105.16" height="3"></rect>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 119 147" class="svg_formats linkc_xml">
+                                                <g class="xml-1">
+                                                    <image class="xml-2" width="119" height="146" xlink:href="data:image/png;base64,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"></image>
+                                                    <path class="xml-3" d="M3.94,54v73.5a9.53,9.53,0,0,0,9.5,9.5H99.59a9.53,9.53,0,0,0,9.5-9.5V54Z"></path>
+                                                    <path class="xml-3" d="M109.09,57V38.66L74,3.17H13.44a9.53,9.53,0,0,0-9.5,9.5V57Z"></path>
+                                                    <path class="xml-4" d="M74,3.17l-3.6,32.77a9.53,9.53,0,0,0,9.5,9.5l29.21-6.78Z"></path>
+                                                    <path class="xml-5" d="M74.08,3.17v26a9.53,9.53,0,0,0,9.5,9.5h25.51Z"></path>
+                                                    <image class="xml-6" width="41" height="27" transform="translate(13 23)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAbCAYAAADh0qZQAAAACXBIWXMAAAsSAAALEgHS3X78AAADpklEQVRYR+2X209TQRDGf9OeAi3SWtGKCmrU+GKMJhr//3cf9MlovEQRbyhCi6Wlt/Xhm+1ZD2iR+ACJkzTnnN2dmW++nZ3ZWgiBky6lWQtOgpwKkFl8MTNLJ0IhDw6bn6UDx9dLxUII0VAFmPPxITAMIUwAzKzk8xWfHwBjoOw65mNTnUQvS+wW9eLYKNUrSgRZARpAy5W/A1tAHwhAFVgGziGjm0APqAMryOlX4BvQCyFMPPA517no/r4Au8BSMvbZ/Q1/x2jmxsrI4S1X/gI8Bz6iyM8Dd4BLCMw+yuc14BFQA14AT4HPZjbw+RpwDbiPgn0CfABWgYdIHgN7aPcOlcxzZIxYGwBNBLQCTNzAVRRABmwgkIYCW0NsGWJlGznM0O6s+m8CvEGsLbs9gNe+1lAgByQenDHQBtbR9t0D7iIwO8B1xMo7X9MG5pHRfRRIFYFaQAEvuq2Wrxv5M+b3IpIKM6pMBuA51EfbvA7cAK74ml1ksAO8R/nYR8ZHwA/EkiFG6wh4EzF41tfvIzLwtZa8/1HSCCZAFwF5h5L+gf/mfWyDHBSImT4KYARcQPm75O+XUL73UAocq71N66Tn5hDl1AcE+BYKZAt46880wQPK4zYCUkXM/UBbn5EftEUUeIUjsJdKxq+SOt3x9xIyOkTblebVvOt1fb4BXPaxlutt+/cFH9slB3okZosgY22rISBdZHAFnfhPiJUKyr0WcAbVxzHa5oY/a+hAxbp4HjG9S17IjyTTnEy6TgNFPQZeohytooPURA7mEcCb/iwjQH0EuokI2EQpEgO4iIL7qy1PmSyhvLmMmOuggr6AALZ8ro0cNJDTMgLxFR2uqtvb87GOz8daGFsr5Ke8BJS8pQf4tZ9nMO2xCwjIKmJqHXhGztKaz22hg5H28jECs4kKf9m/txG7E+S8mIdlREzd14xRbg/MbNomI5NlxMxVVDZ6aJs/uuEa6hIryPEGeTcCAen53I6v30TdJXayLmIsdqs+eQrcRrk6IA+2g1eStHcvIAbb6IC8d0X8vY4CmPP1beCVz0d2JyhF6q7T9rEtX2uoYRhqkfFCs4oA9hHALtA1s1EIIcy6BfUcRHoLirW0jE5scMdxLLbGDnmQTbQL5rZBDC6hIEbJc8pkCGEIx79PDpHDmC4DdwACGg9TbIPpnTKum4MDJTDgOUlydbN4iGbdlovzRUnXm5kVvw/XOrQMHTjdVsByIuVU/BH7D/JfyakA+RPMBm+QrgWEgQAAAABJRU5ErkJggg=="></image>
+                                                    <text class="xml-7" transform="translate(15.39 39.74)">XML</text>
+                                                    <image class="xml-6" width="65" height="55" transform="translate(24 71)" xlink:href="data:image/png;base64,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"></image>
+                                                    <polyline class="xml-8" points="39.89 85.26 28.64 96.5 39.89 107.12"></polyline>
+                                                    <polyline class="xml-8" points="71.11 85.26 82.36 96.5 71.11 107.12"></polyline>
+                                                    <line class="xml-8" x1="64.26" y1="74.02" x2="46.76" y2="118.98"></line>
+                                                    <rect class="xml-5" x="3.94" y="54" width="105.16" height="3"></rect>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div style="width: 100%;margin-top: 40px;">
+                                            <span class="null">You must put the extension to the downloaded file</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid seccion_home">
+                    <div class="row dataset_div"></div>
+                    <button class="btn btn-primary btn-wd previo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Siguiente</font></font></button>
+                    <button class="btn btn-primary btn-wd siguiente"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></button>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-center">
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                        </p>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   -->
+    <!-- <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
+
+        <ul class="dropdown-menu">
+			<li class="header-title"> Sidebar Style</li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Background Image</p>
+                    <label class="switch">
+                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="primary" data-off-color="primary"><span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <p>Filters</p>
+                    <div class="pull-right">
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-purple active" data-color="purple"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
+
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="..//assets/img/sidebar-4.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="button-container">
+                <div class="">
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block btn-fill">Download, it's free!</a>
+                </div>
+            </li>
+
+            <li class="header-title pro-title text-center">Want more components?</li>
+
+            <li class="button-container">
+                <div class="">
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block btn-fill">Get The PRO Version!</a>
+                </div>
+            </li>
+
+            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+
+            <li class="button-container">
+				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
+            </li>
+        </ul>
+    </div>
+</div>
+ -->
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>-->
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!--table-->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+<script src="js/svg.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/index_home.js"></script>
+<script src="js/index_description.js"></script>
+
+
+
+</html>
